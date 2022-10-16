@@ -136,11 +136,18 @@ body {
     padding-bottom: 94px;
 
 }
-/*нужно решить вопрос как уьрать с макета єтот заголовок!*/
-.hidden {
+.selector {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+
 }
+.selector .item:not(:last-child) {
+    margin-right: 8px;
+}
+
 /*заголовок в секции особенности*/
 .section.title {
     margin-top: 0;
@@ -181,13 +188,7 @@ body {
 
     
 }
-.selector {
-    margin-top: 0;
-    margin-bottom: 50px;
-    dislplay: flex;
 
-    
-}
 .resources {
     margin-top: 0;
     margin-bottom: 0;
