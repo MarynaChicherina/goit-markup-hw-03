@@ -19,9 +19,53 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-
-    outline: 2px solid #2196F3;
 }
+.list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+.container.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+ 
+}
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+.list.header {
+    display: flex;
+    margin-left: 93px;
+
+}
+
+.list.header .item:not(:last-child) {
+    margin-right: 50px;
+}
+.list.header .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+.list.nav {
+    display: flex;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+.list.nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+.list.nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+
 /*logo*/
 .logo {
     margin-top: 0;
@@ -40,15 +84,11 @@ body {
 .logo>.logo-three {
     color: var(--primary-white-color);
        }
-.list {
-    list-style: none;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding: 0;
-}
+
 .link {
     text-decoration: none;
 }
+
 /*стилізація навігації*/
 .linknav {
     color: var(--title-text-color);
