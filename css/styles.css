@@ -152,12 +152,15 @@ img {
     margin-right: 8px;
 }
 
-/*заголовок в секции особенности*/
+/*заголовок в секции особливості*/
 .section.title {
     margin-top: 0;
     margin-bottom: 10px;
 }
+
+
 /*секція чим ми займаємося*/
+
 .jobs {
     padding-top: 0;
     padding-bottom: 94px;
@@ -177,6 +180,16 @@ img {
 .section {
     color: var(--title-text-color);
 }
+/*заголовок секції jobs чим ми займаємося*/
+
+.occupation {
+    margin-top: 0;
+    margin-bottom: 50px;
+    
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
 /*секція наша команда*/
 .section-comand {
     padding-top: 94px;
@@ -184,6 +197,32 @@ img {
 
     background-color: var(--bg-color-section);
 
+}
+.comand {
+    display: flex;
+    flex-wrap: wrap;
+}
+.comand > .item {
+    flex-basis: calc(100%-3*var(--gallery-gap)/4);    
+}
+.comand > .item:not(:nth-last-child(-n+1)){
+    margin-right: var(--gallery-gap);
+}
+
+.names {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.people {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 1.19;
 }
 /*секція projects портфоліо*/
 .projects {
@@ -241,22 +280,7 @@ img {
     margin-top: 20px;
     
 }
-.names {
-    margin-top: 30px;
-    margin-bottom: 10px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-}
-.people {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 30px;
-
-    font-size: 16px;
-    line-height: 1.19;
-}
 /*особливості*/
 .title {
     font-size: 14px;
@@ -269,21 +293,10 @@ img {
     margin-bottom: 0;
 
     font-size: 14px;
-    line-height: 2;
-   
-}
-/*заголовок секції jobs чим ми займаємося*/
-.occupation {
-    margin-top: 0;
-    margin-bottom: 50px;
-    
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+    line-height: 2;   
 }
 
-
-/*button*/
+/*Кнопки*/
 .button {
     font-weight: 500;
     font-size: 16px;
@@ -316,6 +329,7 @@ img {
     min-width: 73px;
     text-align: center;
 }
+/*скриті заголовки*/
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -328,6 +342,7 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
+/*ceкція в Портфоліо з галереєю картинок*/
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -335,18 +350,16 @@ img {
     margin-bottom: -1*var(--gallery-gap);
 }
 .gallery > .item {
-    flex-basis: calc(100%-2*30px/ 3);
-    box-shadow: 1px #EEEEEE;
-    
-    
+    flex-basis: calc(100%-2*var(--gallery-gap)/ 3);    
 }
+
 .gallery > .item:not(:nth-last-child(-n+3)){
     margin-bottom: var(--gallery-gap);
 }
 .gallery > .item:not(:nth-child(3n+3)){
     margin-right: var(--gallery-gap);
 }
-
+/*текстовий контент в картках портфоліо*/
 .card-text {
     padding: 20px 24px;
     border-bottom: 1px solid #EEEEEE;
