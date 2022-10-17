@@ -336,8 +336,9 @@ img {
 }
 .gallery > .item {
     flex-basis: calc(100%-2*30px/ 3);
+    box-shadow: 1px #EEEEEE;
     
-    outline: 1px solid teal;
+    
 }
 .gallery > .item:not(:nth-last-child(-n+3)){
     margin-bottom: var(--gallery-gap);
@@ -348,5 +349,7 @@ img {
 
 .card-text {
     padding: 20px 24px;
-
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
