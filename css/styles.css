@@ -6,6 +6,7 @@
     --bg-color-footer-hero: #2F303A;
     --bg-color-section: #F5F4FA;
     --primary-black-color: #000000;
+    --gallery-gap: 30px;
 }
 
 body {
@@ -14,8 +15,11 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
+img {
+    display: block;
+}
 .container {
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -160,7 +164,7 @@ body {
 
 }
 .section-title {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 4px;
 
     color: var(--title-text-color);
@@ -185,19 +189,16 @@ body {
 .projects {
     padding-top: 94px;
     padding-bottom: 94px;
-
-    
+  
 }
 
 .resources {
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 20px;
-
+   
     font-size: 16px;
     line-height: 1.88;
-    
-    
+     
 }
 /*футер*/
 .footer {
@@ -326,4 +327,26 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+   
+    margin-bottom: -1*var(--gallery-gap);
+}
+.gallery > .item {
+    flex-basis: calc(100%-2*30px/ 3);
+    
+    outline: 1px solid teal;
+}
+.gallery > .item:not(:nth-last-child(-n+3)){
+    margin-bottom: var(--gallery-gap);
+}
+.gallery > .item:not(:nth-child(3n+3)){
+    margin-right: var(--gallery-gap);
+}
+
+.card-text {
+    padding: 20px 24px;
+
 }
