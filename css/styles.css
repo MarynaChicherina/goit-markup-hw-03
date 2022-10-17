@@ -134,54 +134,56 @@ img {
      text-transform: uppercase;
 
 }
-/*секції*/
-.features {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-}
+/*секція кнопок у потрфоліо*/
 .selector {
     margin-top: 0;
     margin-bottom: 50px;
     padding-left: 0;
     display: flex;
     justify-content: center;
-
 }
 .selector .item:not(:last-child) {
     margin-right: 8px;
 }
 
+
+/*секція особливості*/
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
 /*заголовок в секции особливості*/
 .section.title {
     margin-top: 0;
     margin-bottom: 10px;
 }
+.qualities {
+    display: flex;
+ 
+}
+.qualities > .item {
+    width: 270px;
+
+}
+.qualities > .item {
+    flex-basis: calc(100%-3*var(--gallery-gap)/ 4);   
+}
+.qualities > .item:not(:nth-last-child(-n+1)) {
+    margin-right: var(--gallery-gap);
+}
+
 
 
 /*секція чим ми займаємося*/
-
 .jobs {
     padding-top: 0;
     padding-bottom: 94px;
-
-}
-.section-title {
-    margin-top: 0;
-    margin-bottom: 4px;
-
-    color: var(--title-text-color);
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-
-    
 }
 .section {
     color: var(--title-text-color);
 }
 /*заголовок секції jobs чим ми займаємося*/
-
 .occupation {
     margin-top: 0;
     margin-bottom: 50px;
@@ -190,25 +192,44 @@ img {
     line-height: 1.17;
     text-align: center;
 }
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+.work > .item {
+    flex-basis: calc(100%-2*var(--gallery-gap)/ 3);   
+}
+.work > .item:not(:nth-last-child(-n+1)) {
+    margin-right: var(--gallery-gap);
+}
+
 /*секція наша команда*/
 .section-comand {
     padding-top: 94px;
     padding-bottom: 94px;
 
     background-color: var(--bg-color-section);
-
 }
 .comand {
     display: flex;
     flex-wrap: wrap;
 }
 .comand > .item {
-    flex-basis: calc(100%-3*var(--gallery-gap)/4);    
+    flex-basis: calc(100%-3*var(--gallery-gap)/4);  
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-white-color);
 }
 .comand > .item:not(:nth-last-child(-n+1)){
     margin-right: var(--gallery-gap);
 }
-
+.comand-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    
+}
 .names {
     margin-top: 0;
     margin-bottom: 10px;
@@ -227,17 +248,23 @@ img {
 /*секція projects портфоліо*/
 .projects {
     padding-top: 94px;
-    padding-bottom: 94px;
-  
+    padding-bottom: 94px;  
 }
-
 .resources {
     margin-top: 0;
     margin-bottom: 0;
    
     font-size: 16px;
-    line-height: 1.88;
-     
+    line-height: 1.88;     
+}
+.section-title {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;   
 }
 /*футер*/
 .footer {
