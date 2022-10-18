@@ -24,6 +24,10 @@ img {
     padding-right: 15px;
     margin: 0 auto;
 }
+h1, h2, h3, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .list {
     list-style: none;
     margin-bottom: 0;
@@ -33,8 +37,11 @@ img {
 .container.header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
- 
+    
+    
+}
+.page-header {
+    border-bottom: 1px solid #ECECEC;      
 }
 .main-nav {
     display: flex;
@@ -43,9 +50,7 @@ img {
 .list.header {
     display: flex;
     margin-left: 93px;
-
 }
-
 .list.header .item:not(:last-child) {
     margin-right: 50px;
 }
@@ -53,7 +58,6 @@ img {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
 }
 .list.nav {
     display: flex;
@@ -67,9 +71,7 @@ img {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
 }
-
 /*logo*/
 .logo {
     margin-top: 0;
@@ -121,10 +123,11 @@ img {
 .hero {
     background-color: var(--bg-color-footer-hero);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title {
-     margin-top: 0;
-     margin-bottom: 30px;
+    margin-bottom: 30px;
 
      color: var(--primary-white-color);
      font-weight: 900;
@@ -153,14 +156,13 @@ img {
     padding-bottom: 94px;
 
 }
+
 /*заголовок в секции особливості*/
 .section.title {
-    margin-top: 0;
     margin-bottom: 10px;
 }
 .qualities {
     display: flex;
- 
 }
 .qualities > .item {
     width: 270px;
@@ -185,7 +187,6 @@ img {
 }
 /*заголовок секції jobs чим ми займаємося*/
 .occupation {
-    margin-top: 0;
     margin-bottom: 50px;
     
     font-size: 36px;
@@ -231,7 +232,6 @@ img {
     
 }
 .names {
-    margin-top: 0;
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -239,9 +239,6 @@ img {
     line-height: 1.19;
 }
 .people {
-    margin-top: 0;
-    margin-bottom: 0;
-
     font-size: 16px;
     line-height: 1.19;
 }
@@ -251,14 +248,10 @@ img {
     padding-bottom: 94px;  
 }
 .resources {
-    margin-top: 0;
-    margin-bottom: 0;
-   
     font-size: 16px;
     line-height: 1.88;     
 }
 .section-title {
-    margin-top: 0;
     margin-bottom: 4px;
 
     color: var(--title-text-color);
@@ -267,11 +260,13 @@ img {
     letter-spacing: 0.06em;   
 }
 /*футер*/
+.page-footer {
+    background-color: var(--bg-color-footer-hero);
+}
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    background-color: var(--bg-color-footer-hero);
     color:var(--primary-white-color);
     
 }
@@ -282,8 +277,6 @@ img {
         
 }
 .addressfooter {
-    margin-top: 0;
-    margin-bottom: 0;
     
     font-size: 14px;
     line-height: 2;
@@ -316,9 +309,6 @@ img {
 }
 /*абзац в секции особенности*/
 .description {
-    margin-top: 0;
-    margin-bottom: 0;
-
     font-size: 14px;
     line-height: 2;   
 }
