@@ -249,23 +249,28 @@ h1, h2, h3, p {
 }
 .resources {
     font-size: 16px;
-    line-height: 1.88;     
+    line-height: 1.88;
+    color: var(--primary-text-color);   
 }
 .section-title {
     margin-bottom: 4px;
-
+  
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;   
 }
+.cardlink {
+    text-decoration: none;
+}
 /*футер*/
 .page-footer {
     background-color: var(--bg-color-footer-hero);
-}
-.footer {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer {
+
 
     color:var(--primary-white-color);
     
@@ -282,23 +287,29 @@ h1, h2, h3, p {
     line-height: 2;
     font-style: normal;
 }
-.linkfooter {
-    margin-top: 9px;
 
+.linkfooter:hover,
+.linkfooter:focus {
+    color: var(--accent-color);
+}
+.footeraddress {
+    margin-top: 20px;    
+}
+
+.final > .item {
+    margin-top: 9px;
+    margin-bottom: 0;
+
+}
+.linkfooter {
+   
     display: inline-block;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-size: 14px;
     line-height: 2;
     font-style: normal;
-}
-.linkfooter:hover,
-.linkfooter:focus {
-    color: var(--accent-color);
-}
-.footeraddress {
-    margin-top: 20px;
-    
+
 }
 
 /*особливості*/
