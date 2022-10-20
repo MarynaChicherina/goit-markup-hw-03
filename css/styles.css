@@ -345,7 +345,7 @@ h1, h2, h3, p {
 }
 .button.secondary:hover {
     background-color: var(--accent-color);
-    color: var(--title-text-color);
+    color: var(--primary-white-color);
 }
 .hero > .button.primary {
     padding: 10px 32px;
